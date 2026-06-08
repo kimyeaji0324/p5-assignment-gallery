@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>p5.js Assignment Gallery</title>
 
   <style>
@@ -15,50 +16,50 @@
       padding: 40px;
       background: #111827;
       color: #f9fafb;
-      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      font-family: Arial, "Noto Sans KR", sans-serif;
     }
 
     header {
-      margin-bottom: 36px;
       text-align: center;
+      margin-bottom: 36px;
     }
 
     h1 {
       margin: 0;
       font-size: 36px;
-      font-weight: 700;
-      letter-spacing: -0.04em;
+      letter-spacing: -1px;
     }
 
     .intro {
       margin-top: 12px;
-      color: #cbd5e1;
       font-size: 15px;
       line-height: 1.6;
+      color: #cbd5e1;
     }
 
-    .grid {
+    .gallery {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 28px;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
     .card {
       background: #1f2937;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 20px;
+      border-radius: 22px;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
     }
 
     .card-title {
       padding: 16px 20px;
       font-size: 18px;
-      font-weight: 600;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, 0.04);
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     iframe {
@@ -74,6 +75,7 @@
       text-align: center;
       color: #94a3b8;
       font-size: 13px;
+      line-height: 1.6;
     }
 
     @media (max-width: 800px) {
@@ -81,7 +83,7 @@
         padding: 24px;
       }
 
-      .grid {
+      .gallery {
         grid-template-columns: 1fr;
       }
 
@@ -96,12 +98,12 @@
   <header>
     <h1>p5.js Assignment Gallery</h1>
     <p class="intro">
-      지금까지 제작한 p5.js 과제 1~4를 하나의 웹페이지에 정리한 과제 갤러리입니다.<br />
-      정적 작품과 동적 작품이 한 화면에서 바로 확인될 수 있도록 2행 2열 구조로 구성했습니다.
+      지금까지 수행한 p5.js 과제 1~4를 하나의 웹사이트에 정리했습니다.<br />
+      정적 작품과 동적 작품을 한 화면에서 바로 확인할 수 있도록 2행 2열 구조로 배치했습니다.
     </p>
   </header>
 
-  <main class="grid">
+  <main class="gallery">
     <section class="card">
       <div class="card-title">과제 1</div>
       <iframe src="https://editor.p5js.org/ilskjy0324/full/NrgAn3iHT"></iframe>
@@ -124,7 +126,9 @@
   </main>
 
   <footer>
-    HTML, CSS, iframe을 활용하여 p5.js 과제물을 한 페이지에 배치했습니다.
+    HTML의 iframe 태그와 CSS Grid를 활용하여 네 개의 p5.js 작품을 하나의 웹페이지에 배치했습니다.
   </footer>
+</body>
+</html>
 </body>
 </html>
